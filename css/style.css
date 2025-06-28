@@ -555,7 +555,7 @@ nav ul li a:hover {
 }
 
 .product-image {
-    height: 250px;
+    height: 300px;
     overflow: hidden;
     position: relative;
 }
@@ -2536,7 +2536,6 @@ footer::before {
 
 /* Estilização dos Cards */
 .CardCardapio {
-
     backdrop-filter: blur(10px);
     border-radius: 20px;
     overflow: hidden;
@@ -2561,7 +2560,7 @@ footer::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 190px;
+    height: 203px;
 }
 
 .CardCardapioFoto::before {
@@ -2588,7 +2587,7 @@ footer::before {
 
 .CardCardapioFoto img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 /* .cardapioCards:hover .CardCardapioFoto img {
