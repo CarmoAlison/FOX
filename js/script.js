@@ -714,8 +714,8 @@ document.addEventListener('DOMContentLoaded', function () {
         // Calculate delivery fee
         deliveryFee = 0;
         if (orderType === 'delivery' && !hasMadrugadaCombo) {
-            if (deliveryOption === "Macau") deliveryFee = 0;
-            if (deliveryOption === "I ilha") deliveryFee = 0;
+            if (deliveryOption === "Macau") deliveryFee = 2;
+            if (deliveryOption === "I ilha") deliveryFee = 7;
             if (deliveryOption === "II ilha") deliveryFee = 10;
         }
 
@@ -879,6 +879,8 @@ document.addEventListener('DOMContentLoaded', function () {
         switch (productName) {
             case 'ESPECIAL MIX':
                 return 26.00;
+            case 'PROMOÇÃO DO DIA - 2X ESPECIAL MIX':
+                return 39.00;
             case 'ESPECIAL FOX':
                 return 34.00;
             case 'ESPECIAL RAPOSA':
