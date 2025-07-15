@@ -126,14 +126,15 @@
                     </div>
                 </div>
             </div>
+
             <div class="cardapioCards">
                 <div class="CardCardapio">
                     <div class="CardCardapioFoto">
-                        <img src="/imagens/Cardapio/Salgados.png" alt="Salgados">
+                        <img src="/imagens/Cardapio/bolos.png" alt="Salgados">
                     </div>
                     <div class="CardCardapioBody">
                         <p id="CardapioBodyP">Acesse agora nossos <span>Bolo de chocolate</span> </p>
-                        <a href="#products2"><button onclick="Salgados()">Acesse já</button></a>
+                        <a href="#products3"><button onclick="Bolo()">Acesse já</button></a>
                     </div>
                 </div>
             </div>
@@ -1127,6 +1128,34 @@
             </div>
         </div>
     </section>
+
+    <section class="products1" id="products3">
+        <div class="container" id="salgado">
+            <h2 class="section-title">BOLO DO <span>FOX</span></h2>
+            <p class="section-subtitle">Conheça nossa linha de combos</p>
+
+            <div class="product-grid">
+                <!-- Combo Madrugadão -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagens/Cardapio/BOLO.jpg" alt="Combo Madrugadão">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo</h3>
+                        <p class="product-description">Bolo de chocolate!</p>
+                        <div class="product-sizes">
+                            <div class="size-option" style="justify-content: center; font-weight: bold;">
+                                R$ 6,00
+                            </div>
+                        </div>
+                        <button class="add-to-cart" data-product="Bolo de Chocolate" data-price="6.00">ADICIONAR AO
+                            CARRINHO</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- Costumizar o açaí  -->
     <section class="custom-acai" id="custom">
         <div class="container">
@@ -1493,6 +1522,7 @@
     function Combos() { toggleGroup("products1"); }
     function Custumizar() { toggleGroup("custom"); }
     function Salgados() { toggleGroup("products2"); }
+    function Bolo() { toggleGroup("products3"); }
     function Cardapio() { toggleGroup("CardapioGeral"); }
 
     function cardPersonalizar() {

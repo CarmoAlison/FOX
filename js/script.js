@@ -65,6 +65,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     custom: false
                 });
             }
+            // Verifica se é um combo
+            if (productName.includes("Bolo")) {
+                addToCart({
+                    name: productName,
+                    size: "",
+                    price: productPrice,
+                    custom: false
+                });
+            }
             // Verifica se é um salgado
             else if (productName === "Coxinha" || productName === "Pastel de forno" || productName === "Empada") {
                 addToCart({
@@ -874,6 +883,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (productName.includes("Salgado - Coxinha")) return 6.00;
         if (productName.includes("Salgado - Empada")) return 6.00;
         if (productName.includes("Salgado - Pastel de forno")) return 6.00;
+        if (productName.includes("Bolo de chocolate")) return 6.00;
 
         // Preços para produtos normais
         switch (productName) {
