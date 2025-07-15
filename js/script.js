@@ -883,7 +883,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (productName.includes("Salgado - Coxinha")) return 6.00;
         if (productName.includes("Salgado - Empada")) return 6.00;
         if (productName.includes("Salgado - Pastel de forno")) return 6.00;
-        if (productName.includes("Bolo de chocolate")) return 6.00;
+        if (productName.includes("Bolo de chocolate")) return 8.00;
 
         // Preços para produtos normais
         switch (productName) {
