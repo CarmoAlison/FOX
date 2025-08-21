@@ -74,6 +74,38 @@ document.addEventListener('DOMContentLoaded', function () {
                     custom: false
                 });
             }
+            if (productName.includes("Agua")) {
+                addToCart({
+                    name: productName,
+                    size: "",
+                    price: productPrice,
+                    custom: false
+                });
+            }
+            if (productName.includes("Mini")) {
+                addToCart({
+                    name: productName,
+                    size: "",
+                    price: productPrice,
+                    custom: false
+                });
+            }
+            if (productName.includes("Pão")) {
+                addToCart({
+                    name: productName,
+                    size: "",
+                    price: productPrice,
+                    custom: false
+                });
+            }
+            if (productName.includes("Refrigerante")) {
+                addToCart({
+                    name: productName,
+                    size: "",
+                    price: productPrice,
+                    custom: false
+                });
+            }
             // Verifica se é um salgado
             else if (productName === "Coxinha" || productName === "Pastel de forno" || productName === "Empada") {
                 addToCart({
@@ -883,6 +915,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (productName.includes("Salgado - Coxinha")) return 6.00;
         if (productName.includes("Salgado - Empada")) return 6.00;
         if (productName.includes("Salgado - Pastel de forno")) return 6.00;
+        if (productName.includes("Refrigerante - Coca Cola")) return 8.00;
+        if (productName.includes("Refrigerante - Guaraná")) return 8.00;
+        if (productName.includes("Agua Mineral")) return 3.00;
+        if (productName.includes("Mini Pizza - Calabresa")) return 7.00;
+        if (productName.includes("Mini Pizza - Frango")) return 7.00;
         if (productName.includes("Bolo de chocolate")) return 8.00;
 
         // Preços para produtos normais
